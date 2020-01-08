@@ -1,32 +1,33 @@
 {
-  "name": "random-power-workout",
+  "name": "in-class-demo",
   "version": "1.0.0",
-  "private": true,
+  "description": "",
+  "main": "server.js",
   "scripts": {
     "test": "jest --verbose --runInBand",
     "test:watch": "npm run test -- --watch",
-    "start": "node ./bin/www",
-    "start:watch": "nodemon ./bin/www"
+    "start": "node server.js",
+    "start:watch": "nodemon server.js"
   },
   "jest": {
     "testEnvironment": "node"
   },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
   "devDependencies": {
-    "@types/jest": "^24.0.23",
+    "@types/jest": "^24.0.24",
     "eslint": "^6.7.2",
     "jest": "^24.9.0",
     "nodemon": "^2.0.2",
     "supertest": "^4.0.2"
   },
   "dependencies": {
-    "cookie-parser": "~1.4.4",
-    "debug": "~2.6.9",
-    "express": "~4.16.1",
-    "http-errors": "~1.6.3",
-    "jade": "~1.11.0",
-    "morgan": "~1.9.1",
+    "bcryptjs": "^2.4.3",
+    "cookie-parser": "^1.4.4",
     "dotenv": "^8.2.0",
-    "mongoose": "^5.8.1",
-    "superagent": "^5.1.2"
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.8.1"
   }
 }
